@@ -1,1 +1,8 @@
 aws_region = "us-east-1"
+
+vpc_id = "vpc-xxxxxxxxxxxxxxxxx"
+
+private_subnet_ids = [
+  "subnet-xxxxxxxxxxxxxxxxx",
+  "subnet-yyyyyyyyyyyyyyyyy"
+]
