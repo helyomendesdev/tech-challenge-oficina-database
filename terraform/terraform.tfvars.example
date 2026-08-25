@@ -6,3 +6,8 @@ private_subnet_ids = [
   "subnet-xxxxxxxxxxxxxxxxx",
   "subnet-yyyyyyyyyyyyyyyyy"
 ]
+
+db_name           = "oficina"
+db_username       = "oficina_admin"
+db_password       = "CHANGE_ME"
+db_instance_class = "db.t3.micro"
