@@ -36,3 +36,13 @@ variable "db_instance_class" {
   type        = string
   default     = "db.t3.micro"
 }
+
+variable "lambda_security_group_id" {
+  description = "Security Group da Lambda que pode acessar o RDS."
+  type        = string
+}
+
+variable "eks_security_group_id" {
+  description = "Security Group do EKS que pode acessar o RDS."
+  type        = string
+}

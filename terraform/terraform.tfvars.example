@@ -7,6 +7,9 @@ private_subnet_ids = [
   "subnet-yyyyyyyyyyyyyyyyy"
 ]
 
+lambda_security_group_id = "sg-xxxxxxxxxxxxxxxxx"
+eks_security_group_id    = "sg-yyyyyyyyyyyyyyyyy"
+
 db_name           = "oficina"
 db_username       = "oficina_admin"
 db_password       = "CHANGE_ME"
