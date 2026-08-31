@@ -1,0 +1,15 @@
+# CODEOWNERS — Tech Challenge Fase 3
+# Repo: tech-challenge-oficina-database
+# Responsável: Sophia Sussa Campos Bastos (infraestrutura)
+
+# Responsável padrão (fallback)
+* @helyomendesdev
+
+# Infraestrutura do banco
+/infra/ @helyomendesdev
+/terraform/ @helyomendesdev
+/scripts/ @helyomendesdev
+/docs/ @helyomendesdev
+
+# CI/CD
+/.github/ @helyomendesdev
