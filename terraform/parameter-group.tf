@@ -3,8 +3,9 @@ resource "aws_db_parameter_group" "postgres" {
   family = "postgres17"
 
   parameter {
-    name  = "shared_preload_libraries"
-    value = "pg_stat_statements"
+    name         = "shared_preload_libraries"
+    value        = "pg_stat_statements"
+    apply_method = "pending-reboot"
   }
 
   tags = {
