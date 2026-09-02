@@ -26,6 +26,11 @@ resource "aws_db_instance" "postgres" {
 
   backup_retention_period = 7
 
+  performance_insights_enabled          = true
+  performance_insights_retention_period = 7
+
+  enabled_cloudwatch_logs_exports = ["postgresql"]
+
   deletion_protection = false
   skip_final_snapshot = true
 
