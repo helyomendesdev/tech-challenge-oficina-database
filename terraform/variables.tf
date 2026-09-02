@@ -1,11 +1,11 @@
 variable "aws_region" {
-  description = "Região da AWS onde os recursos serão provisionados."
+  description = "Regiao da AWS onde os recursos serao provisionados."
   type        = string
   default     = "us-east-1"
 }
 
 variable "vpc_id" {
-  description = "ID da VPC onde o RDS será provisionado."
+  description = "ID da VPC onde o RDS sera provisionado."
   type        = string
 }
 
@@ -15,24 +15,24 @@ variable "private_subnet_ids" {
 }
 
 variable "db_name" {
-  description = "Nome do database PostgreSQL"
+  description = "Nome do database PostgreSQL."
   type        = string
 }
 
 variable "db_username" {
-  description = "Usuário administrador do PostgreSQL"
+  description = "Usuario administrador do PostgreSQL."
   type        = string
   sensitive   = true
 }
 
 variable "db_password" {
-  description = "Senha do usuário administrador do PostgreSQL"
+  description = "Senha do usuario administrador do PostgreSQL."
   type        = string
   sensitive   = true
 }
 
 variable "db_instance_class" {
-  description = "Classe da instância RDS PostgreSQL"
+  description = "Classe da instancia RDS PostgreSQL."
   type        = string
   default     = "db.t3.micro"
 }
