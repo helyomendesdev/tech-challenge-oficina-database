@@ -33,6 +33,7 @@ resource "aws_db_instance" "postgres" {
 
   deletion_protection = false
   skip_final_snapshot = true
+  copy_tags_to_snapshot = true
 
   tags = {
     Name = "oficina-postgres"
