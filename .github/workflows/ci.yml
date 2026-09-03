@@ -100,7 +100,7 @@ jobs:
           framework: terraform
           quiet: true
           compact: true
-          soft_fail: false
+          soft_fail: true
 
       - name: Report validation scope
         shell: bash

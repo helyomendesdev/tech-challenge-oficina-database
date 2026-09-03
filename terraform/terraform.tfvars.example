@@ -1,0 +1,17 @@
+aws_region = "us-east-1"
+
+vpc_id = "vpc-xxxxxxxxxxxxxxxxx"
+
+private_subnet_ids = [
+  "subnet-xxxxxxxxxxxxxxxxx",
+  "subnet-yyyyyyyyyyyyyyyyy"
+]
+
+# Cluster security group criado pelo proprio EKS (o que os nodes usam),
+# nao o oficina-eks-sg. Vem do output eks_cluster_security_group_id do repo de k8s.
+eks_security_group_id    = "sg-yyyyyyyyyyyyyyyyy"
+
+db_name           = "oficina"
+db_username       = "oficina_admin"
+db_password       = "CHANGE_ME"
+db_instance_class = "db.t3.micro"
