@@ -31,8 +31,8 @@ resource "aws_db_instance" "postgres" {
 
   enabled_cloudwatch_logs_exports = ["postgresql"]
 
-  deletion_protection = false
-  skip_final_snapshot = true
+  deletion_protection   = false
+  skip_final_snapshot   = true
   copy_tags_to_snapshot = true
 
   tags = {
